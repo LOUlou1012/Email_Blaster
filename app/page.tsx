@@ -49,7 +49,7 @@ export default function Home() {
         </CardHeader>
 
         <CardContent className="space-y-4">
-          {/* Email input */}
+          
           <div className="space-y-2">
             <Label>Recipients</Label>
             <Textarea
@@ -70,7 +70,7 @@ export default function Home() {
             />
           </div>
 
-          {/* Message */}
+          
           <div className="space-y-2">
             <Label>Message</Label>
             <Textarea
@@ -81,7 +81,7 @@ export default function Home() {
             />
           </div>
 
-          {/* Button */}
+          
           <Button
             onClick={handleSend}
             disabled={loading}
@@ -99,10 +99,10 @@ export default function Home() {
 
           {/* Status */}
           {status === "success" && (
-            <p className="text-green-600 text-sm">✅ Emails sent successfully</p>
+            <p className="text-green-600 text-sm">Emails sent successfully</p>
           )}
           {status === "error" && (
-            <p className="text-red-600 text-sm">❌ Failed to send emails</p>
+            <p className="text-red-600 text-sm">Failed to send emails</p>
           )}
         </CardContent>
       </Card>
